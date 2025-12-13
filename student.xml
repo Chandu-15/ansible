@@ -1,0 +1,30 @@
+<students>
+    <student>
+        <name> chandana </name>
+        <age> 21</age>
+        <adresses>
+            <adress type=perm>
+                <dno>23-56</dno>
+                <email>chandana@gmail.com</email>
+            </adress>
+            <adress type=current>
+                <dno> 3-456</dno>
+                <email>da@gmail.com</email>
+            </adress>
+        </adresses>
+    </student>
+        <student>
+        <name> chandana </name>
+        <age> 21</age>
+        <adresses>
+            <adress type=perm>
+                <dno>23-56</dno>
+                <email>chandana@gmail.com</email>
+            </adress>
+            <adress type=current>
+                <dno> 3-456</dno>
+                <email>da@gmail.com</email>
+            </adress>
+        </adresses>
+    </student>
+</students>
