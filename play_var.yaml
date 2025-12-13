@@ -1,6 +1,6 @@
  - name: play level variable
    hosts: local
-   connections: local
+   connection: local
    vars:
       COURSE: python
       DURATION: 10hrs
