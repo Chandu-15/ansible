@@ -71,6 +71,7 @@
     - name: redirect command module
       ansible.builtin.command: ls -ltr > /tmp/output.txt
       register: redirect_command
+      ignore_errors: true
     - name: print command redirect output 
       ansible.builtin.debug:
         msg: "{{ redirect_command }}"
