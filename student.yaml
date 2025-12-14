@@ -1,31 +1,32 @@
- - name:"chandana"
-   dob :"01-02"
-   age:21
-   adress:
-   - dno:1-1135
-     type:temp
-     pin:456321
-     city:kadiri
-   - dno:1-234
-     type:curr
-     pin:67808
-     city:banglore
-  skills:
-   - java
-   - python
- - name:"chandana"
-   dob :"01-02"
-   age:21
-   adress:
-   - dno:1-1135
-     type:temp
-     pin:456321
-     city:kadiri
-   - dno:1-234
-     type:curr
-     pin:67808
-     city:banglore
-  skills:
+ - name: chandu
+   dob : 01-02-12023
+   age: 21
+   address:
+    - dno: 1-1135
+      type: temp
+      pin: 456321
+      city: kadiri
+    - dno: 1-234
+      type: curr
+      pin: 67808
+      city: banglore
+   skills:
+    - java
+    - python
+
+ - name: ramesh
+   dob : 09-08-2025
+   age: 21
+   address:
+    - dno: 1-3467
+      type: temp
+      pin: 67894
+      city: kadiri
+    - dno: 1-453
+      type: curr
+      pin: 23456
+      city: banglore
+   skills:
    - java
    - python
 
