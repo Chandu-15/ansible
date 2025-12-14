@@ -52,10 +52,11 @@
     - name: check ip is valid or not
       ansible.builtin.debug:
         msg: "ip is : {{ IP | ansible.utils.ipv4 }}"
+
     - name: pipe command module
       ansible.builtin.command: cat /etc/passwd | grep root
       register: command_output
-      ignore errors: true
+      ignore_errors: true
     - name: print command output 
       ansible.builtin.debug:
         msg: "{{ command_output }}"
