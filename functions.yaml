@@ -55,6 +55,7 @@
     - name: pipe command module
       ansible.builtin.command: cat /etc/passwd | grep root
       register: command_output
+      ignore errors: true
     - name: print command output 
       ansible.builtin.debug:
         msg: "{{ command_output }}"
