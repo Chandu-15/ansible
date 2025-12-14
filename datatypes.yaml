@@ -1,0 +1,19 @@
+  - name: datatypes details
+    hosts: local
+    connection: local
+    vars:
+      COURSE: Devops #string
+      Duration: 9 #integer
+      is_live: true #boolean
+      #list
+      tools: #["python","java","nodejs"] #list
+        - "python"
+        - "java"
+        - "nginx"
+      concepts: #dictionary or map or keypair value
+        cloud: aws
+        cm: ansible
+    tasks:
+      - name: list the datatypes
+        ansible.builtin.debug:
+          msg: "Course name is : {{ COURSE}},Duration is : {{ Duration}},is it live? : {{ is_live }},tools are : {{ tools }},concepts are: {{ concepts}}"

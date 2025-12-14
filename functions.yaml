@@ -1,0 +1,36 @@
+ - name: functions
+   hosts: local
+   connection: local
+   vars:
+   #convert strings to list
+    technologies: python,ansible,java
+    #convert keypair to list
+    tags:
+     Application: payment
+     env: dev
+    #convert list to keypair
+    tagslist:
+      - key: Application
+      - value: payment
+      - key: env
+      - value: dev
+   tasks:
+    - name: default variables
+      ansible.builtin.debug:
+        msg: "Hello,{{ name | defalut('chandana') }}"
+      #convert string to list  
+    - name: convert string to list
+      ansible.builtin.debug:
+        msg: "Technologies are {{ technologies | split(',')}}"
+      #convert keypair to list
+    - name: convert keypair to list
+      ansible.builtin.debug:
+        msg: "tags are {{ tags | dict2items }}"
+      #convert list to keypair
+    - name: convert  list to keypair 
+      ansible.builtin.debug:
+        msg: "tags are {{ tagslist | items2dict }}"
+
+
+      
+     

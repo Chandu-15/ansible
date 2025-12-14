@@ -1,0 +1,7 @@
+{
+    "name":"chandana",
+    "dob":"23-04-1999",
+    "adress":[{"adress_type":"curr","dno":"1-1134"},
+    {"adress_type":"temp","dno":"1-1136"}],
+    "skills":["java","python"]
+}
