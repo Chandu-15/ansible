@@ -11,9 +11,9 @@
     #convert list to keypair
     tagslist:
       - key: Application
-      - value: payment
+        value: payment
       - key: env
-      - value: dev
+        value: dev
    tasks:
     - name: default variables
       ansible.builtin.debug:
