@@ -51,7 +51,7 @@
         content: "{{ student_yaml | to_nice_json }}"
     - name: check ip is valid or not
       ansible.builtin.debug:
-        msg: "ip is : {{ ip | ansible.utils.ipv4 }}"
+        msg: "ip is : {{ IP | ansible.utils.ipv4 }}"
     - name: pipe command module
       ansible.builtin.command: cat /etc/passwd | grep root
       register: command_output
